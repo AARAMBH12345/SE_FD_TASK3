@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <section id="intro-screen" class="screen active">
+      <h1>Welcome to Quiz Platform</h1>
+      <button id="start-btn">Start Quiz</button>
+    </section>
+
+    <section id="quiz-screen" class="screen">
+      <div class="quiz-header">
+        <span id="question-number">Question 1/5</span>
+        <span id="timer">30s</span>
+      </div>
+      <div id="question-box">
+        <h2 id="question-text">Question goes here</h2>
+        <ul id="options-list"></ul>
+      </div>
+      <button id="next-btn" disabled>Next</button>
+    </section>
+
+    <section id="result-screen" class="screen">
+      <h2>Quiz Completed!</h2>
+      <p>You scored <span id="score">0</span> out of <span id="total">0</span></p>
+      <button id="restart-btn">Restart</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
